@@ -21,7 +21,6 @@ struct Planet {
 
 extension Planet {
   
-    
     static func getPlanetList() -> [Planet] {
         
         var planets: [Planet] = []
@@ -36,10 +35,20 @@ extension Planet {
         let g = InfoManager.shared.g
         let temperatures = InfoManager.shared.temperatures
         
-        For index in 0 ..< planetsEng.count {
-            let planet = Planet(planetEng: <#String#>, planetRus: <#String#>, orbitRadius: <#Int#>, daysInYear: <#Int#>, raduis: <#Double#>, mass: <#Double#>, hoursInDay: <#Double#>, g: <#Double#>, temperature: <#Int#>)
+        for index in 0 ..< planetsEng.count {
+           
+            let planet = Planet(planetEng: planetsEng[index],
+                                planetRus: planetsRus[index],
+                                orbitRadius: orbitRadiuses[index],
+                                daysInYear: daysInYear[index],
+                                raduis: raduises[index],
+                                mass: masses[index],
+                                hoursInDay: hoursInDay[index],
+                                g: g[index],
+                                temperature: temperatures[index]
+            )
+            planets.append(planet)
         }
-        planets.append()
         return planets
         }
        
