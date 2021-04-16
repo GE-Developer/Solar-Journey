@@ -17,7 +17,7 @@ class PlanetsListTableViewController: UITableViewController {
   
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8 // хард)
+        return 8 // хард)//
     }
 
     
