@@ -263,10 +263,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Developers" image="person.2.fill" catalog="system" id="uyf-hN-noh"/>
                     <connections>
-                        <outlet property="abImageView" destination="Uos-Th-OCa" id="eQg-ko-SJo"/>
-                        <outlet property="balooouImageView" destination="Xmb-JV-ym5" id="JZo-9P-nGH"/>
-                        <outlet property="d0bssonsImageView" destination="51g-qC-yKp" id="37U-mU-9hY"/>
-                        <outlet property="mishabuxImageView" destination="p6I-oQ-tkV" id="NTJ-ko-UqE"/>
+                        <outlet property="abImageView" destination="Uos-Th-OCa" id="sac-lM-vUG"/>
+                        <outlet property="balooouImageView" destination="Xmb-JV-ym5" id="7Ut-4t-64E"/>
+                        <outlet property="d0bssonImageView" destination="51g-qC-yKp" id="693-Ms-Ydx"/>
+                        <outlet property="mishabuxImageView" destination="p6I-oQ-tkV" id="yMI-TT-2Gf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ey7-Bd-p0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
