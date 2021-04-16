@@ -9,7 +9,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    var engLanguage: Bool!
+    var rusLanguage: Bool!
     
     @IBOutlet var weightQuestionLabel: UILabel!
     @IBOutlet var introLabel: UILabel!
@@ -21,11 +21,29 @@ class LoginViewController: UIViewController {
         changeLanguage()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let tabBarController = segue.destination as! UITabBarController
+        
+        guard let viewControllers = tabBarController.viewControllers else { return }
+        
+        
+            if let planetsListVC = viewControllers.first as? PlanetsListTableViewController {
+                planetsListVC.rusLanguage = rusLanguage
+            }
+            
+        
+        
+            
+        
+    }
+    
     private func changeLanguage() {
-        if engLanguage {
+        if rusLanguage {
             introLabel.text = "Посетим другие планеты и узнаем Ваш вес на них?"
             weightQuestionLabel.text = "Сколько Вы весите на Земле?"
         }
     }
     
 }
+
+

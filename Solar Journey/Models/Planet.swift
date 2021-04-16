@@ -25,7 +25,7 @@ extension Planet {
         var planets: [Planet] = []
         
         let planetsEng = InfoManager.shared.planetsEng
-        let planetsRus = InfoManager.shared.planetsEng
+        let planetsRus = InfoManager.shared.planetsRus
         let orbitRadiuses = InfoManager.shared.orbitRadiuses
         let daysInYear = InfoManager.shared.daysInYear
         let raduises = InfoManager.shared.raduises

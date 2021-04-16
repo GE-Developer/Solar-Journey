@@ -14,26 +14,26 @@ class StartViewController: UIViewController {
     @IBOutlet var russianButton: UIButton!
     
     // MARK: - Private Properties
-    private var engLanguage: Bool!
+    private var rusLanguage: Bool!
     
     // MARK: - Override Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let loginVC = segue.destination as? LoginViewController else { return }
-        loginVC.engLanguage = engLanguage
+        loginVC.rusLanguage = rusLanguage
     }
     
     // MARK: - IB Actions
     @IBAction func englishButtonPressed() {
         englishButton.alpha = 1
         russianButton.alpha = 0.4
-        engLanguage = false
+        rusLanguage = false
         performSegue(withIdentifier: "showLoginView", sender: nil)
     }
     
     @IBAction func russianButtonPressed() {
         englishButton.alpha = 0.4
         russianButton.alpha = 1
-        engLanguage = true
+        rusLanguage = true
         performSegue(withIdentifier: "showLoginView", sender: nil)
     }
     
