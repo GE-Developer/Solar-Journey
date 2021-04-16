@@ -5,19 +5,19 @@
 //  Created by Mikhail Bukhrashvili on 16.04.2021.
 //
 
-struct InfoManagerEng {
+class InfoManagerEng {
     let planets = ["Mercury", "Venus", "Earth", "Mars",
                    "Jupiter", "Saturn", "Uranus", "Neptune"]
 }
 
 
-struct InfoManagerRus {
+class InfoManagerRus {
     let planets = ["Меркурий", "Венера", "Земля", "Марс", "Юпитер",
                    "Сатурн", "Уран", "Нептун"]
 }
 
 
-struct ParameterManager {
+class ParameterManager {
     let orbitRadiuses = [58, 108, 150, 228, 778, 1429, 2871, 4504] // в миллионах км
     
     let daysInYear = [88, 225, 365, 687, 4380, 10585, 30660, 60225] // дней в году
