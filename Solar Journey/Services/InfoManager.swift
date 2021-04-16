@@ -7,7 +7,7 @@
 
 class InfoManagerEng {
     let planets = ["Mercury", "Venus", "Earth", "Mars",
-                   "Jupiter", "Saturn", "Uranus", "Neptune"]
+                   "Jupiter", "Saturn", "Uranus", "Neptune"] // я тут наисал
 }
 
 
