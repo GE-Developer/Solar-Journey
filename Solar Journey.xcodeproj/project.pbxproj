@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3937357B262969500076BAAE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3937357A262969500076BAAE /* Planet.swift */; };
 		EE4978E72628F8CB00F78939 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4978E62628F8CB00F78939 /* LoginViewController.swift */; };
+		EE57611226296FF8007AE97A /* PlanetsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE57611126296FF8007AE97A /* PlanetsListTableViewController.swift */; };
 		EE772D972628EEDE00C8415D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE772D962628EEDE00C8415D /* AppDelegate.swift */; };
 		EE772D992628EEDE00C8415D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE772D982628EEDE00C8415D /* SceneDelegate.swift */; };
 		EE772D9B2628EEDE00C8415D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE772D9A2628EEDE00C8415D /* StartViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		3937357A262969500076BAAE /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		EE4978E62628F8CB00F78939 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EE57611126296FF8007AE97A /* PlanetsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsListTableViewController.swift; sourceTree = "<group>"; };
 		EE772D932628EEDE00C8415D /* Solar Journey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Solar Journey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE772D962628EEDE00C8415D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE772D982628EEDE00C8415D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				EE772D9A2628EEDE00C8415D /* StartViewController.swift */,
 				EE4978E62628F8CB00F78939 /* LoginViewController.swift */,
+				EE57611126296FF8007AE97A /* PlanetsListTableViewController.swift */,
 				EECC16AC2629448900551E65 /* DeveloperViewController.swift */,
 			);
 			path = ViewControllers;
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE4978E72628F8CB00F78939 /* LoginViewController.swift in Sources */,
+				EE57611226296FF8007AE97A /* PlanetsListTableViewController.swift in Sources */,
 				3937357B262969500076BAAE /* Planet.swift in Sources */,
 				EEC22C952629230900D56C69 /* InfoManager.swift in Sources */,
 				EE772D9B2628EEDE00C8415D /* StartViewController.swift in Sources */,

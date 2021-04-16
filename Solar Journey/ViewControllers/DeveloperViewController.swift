@@ -8,14 +8,9 @@
 import UIKit
 
 class DeveloperViewController: UIViewController {
-
-    @IBOutlet var devOneImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-
-  
 
 }
