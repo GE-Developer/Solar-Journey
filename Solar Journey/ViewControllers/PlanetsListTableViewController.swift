@@ -42,4 +42,11 @@ class PlanetsListTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            let detailVC = segue.destination as! DetailViewController
+            detailVC.planet = planets[indexPath.row]
+        }
+    }
+    
 }

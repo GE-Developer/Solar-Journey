@@ -320,10 +320,10 @@
             </objects>
             <point key="canvasLocation" x="1978.125" y="-214.43661971830986"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="FhE-NR-aXo">
             <objects>
-                <viewController id="7Uf-qq-Akc" sceneMemberID="viewController">
+                <viewController id="7Uf-qq-Akc" customClass="DetailViewController" customModule="Solar_Journey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f0I-if-zhb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -413,6 +413,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JZu-Qd-Wbf"/>
+                    <connections>
+                        <outlet property="planetImageView" destination="OwU-3O-jZp" id="uuU-LM-7ZD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zD-g5-iD3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
