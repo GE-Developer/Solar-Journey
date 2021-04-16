@@ -9,7 +9,7 @@ class InfoManagerEng {
     let planets = ["Mercury", "Venus", "Earth", "Mars",// много где написал
                    "Jupiter", "Saturn", "Uranus", "Neptune"] // я тут наисал и теще вот тут
 }
-// САМЫЙ ГЛАВНЫЙ КОММИТ ИЗ ВСЕХ
+// САМЫЙ ГЛАВНЫЙ КОММИТ 
 
 class InfoManagerRus {
     let planets = ["Меркурий", "Венера", "Земля", "Марс", "Юпитер",
