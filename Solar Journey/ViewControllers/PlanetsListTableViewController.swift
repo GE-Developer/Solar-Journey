@@ -30,6 +30,6 @@ class PlanetsListTableViewController: UITableViewController {
         cell.contentConfiguration = content
         
         return cell
-    }
+    } ///CHEK
     
 }
