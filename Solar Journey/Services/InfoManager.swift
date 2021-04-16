@@ -6,8 +6,8 @@
 //
 
 class InfoManagerEng {
-    let planets = ["Mercury", "Venus", "Earth", "Mars",
-                   "Jupiter", "Saturn", "Uranus", "Neptune"] // я тут наисал
+    let planets = ["Mercury", "Venus", "Earth", "Mars",// много где написал
+                   "Jupiter", "Saturn", "Uranus", "Neptune"] // я тут наисал и теще вот тут
 }
 
 
