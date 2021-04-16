@@ -4,10 +4,12 @@
 //
 //  Created by Bulat Kamalov on 16.04.2021.
 //
+import Foundation
+
 struct Planet {
     
-    let nameOfPlanetEng: String
-    let nameOfPlanetRus: String
+    let planetEng: String
+    let planetRus: String
     let orbitRadius: Int
     let daysInYear: Int
     let raduis: Double
@@ -15,4 +17,17 @@ struct Planet {
     let hoursInDay: Double
     let g: Double
     let temperature: Int
+}
+
+
+extension Planet {
+  
+    
+    static func getPlanetList() -> [Planet] {
+        
+        var planets: [Planet] = []
+        
+        let iterationsCount = (
+        
+    }
 }
