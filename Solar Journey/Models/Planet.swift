@@ -26,7 +26,22 @@ extension Planet {
         
         var planets: [Planet] = []
         
-        let iterationsCount = (
+        let planetsEng = InfoManager.shared.planetsEng
+        let planetsRus = InfoManager.shared.planetsEng
+        let orbitRadiuses = InfoManager.shared.orbitRadiuses
+        let daysInYear = InfoManager.shared.daysInYear
+        let raduises = InfoManager.shared.raduises
+        let masses = InfoManager.shared.masses
+        let hoursInDay = InfoManager.shared.hoursInDay
+        let g = InfoManager.shared.g
+        let temperatures = InfoManager.shared.temperatures
         
+        For index in 0 ..< planetsEng.count {
+            let planet = Planet(planetEng: <#String#>, planetRus: <#String#>, orbitRadius: <#Int#>, daysInYear: <#Int#>, raduis: <#Double#>, mass: <#Double#>, hoursInDay: <#Double#>, g: <#Double#>, temperature: <#Int#>)
+        }
+        planets.append()
+        return planets
+        }
+       
     }
-}
+
