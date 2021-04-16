@@ -5,19 +5,13 @@
 //  Created by Mikhail Bukhrashvili on 16.04.2021.
 //
 
-class InfoManagerEng {
-    let planets = ["Mercury", "Venus", "Earth", "Mars",
+class InfoManager {
+    let planetsEng = ["Mercury", "Venus", "Earth", "Mars",
                    "Jupiter", "Saturn", "Uranus", "Neptune"]
-}
-
-
-class InfoManagerRus {
-    let planets = ["Меркурий", "Венера", "Земля", "Марс", "Юпитер",
+    
+    let planetsRus = ["Меркурий", "Венера", "Земля", "Марс", "Юпитер",
                    "Сатурн", "Уран", "Нептун"]
-}
-
-
-class ParameterManager {
+    
     let orbitRadiuses = [58, 108, 150, 228, 778, 1429, 2871, 4504] // в миллионах км
     
     let daysInYear = [88, 225, 365, 687, 4380, 10585, 30660, 60225] // дней в году
@@ -31,5 +25,4 @@ class ParameterManager {
     let g = [3.7, 8.87, 9.8, 3.7, 24.8, 10.4, 8.87, 10.15] // Ускорение свободного падения
     
     let temperatures = [167, 457, 14, -55, -153, -185, -214, -225] // в цельсиях
-   
 }
