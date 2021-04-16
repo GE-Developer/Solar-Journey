@@ -7,7 +7,6 @@
 import Foundation
 
 struct Planet {
-    
     let planetEng: String
     let planetRus: String
     let orbitRadius: Int
