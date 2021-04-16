@@ -19,7 +19,6 @@ struct Planet {
     let temperature: Int
 }
 
-
 extension Planet {
   
     
