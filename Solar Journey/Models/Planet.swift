@@ -6,7 +6,8 @@
 //
 struct Planet {
     
-    let nameOfPlanet: String
+    let nameOfPlanetEng: String
+    let nameOfPlanetRus: String
     let orbitRadius: Int
     let daysInYear: Int
     let raduis: Double
