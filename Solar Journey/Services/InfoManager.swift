@@ -6,10 +6,10 @@
 //
 
 class InfoManagerEng {
-    let planets = ["Mercury", "Venus", "Earth", "Mars",// много где написал
-                   "Jupiter", "Saturn", "Uranus", "Neptune"] // я тут наисал и теще вот тут
+    let planets = ["Mercury", "Venus", "Earth", "Mars",
+                   "Jupiter", "Saturn", "Uranus", "Neptune"]
 }
-// САМЫЙ ГЛАВНЫЙ КОММИТ 
+
 
 class InfoManagerRus {
     let planets = ["Меркурий", "Венера", "Земля", "Марс", "Юпитер",
@@ -31,8 +31,5 @@ class ParameterManager {
     let g = [3.7, 8.87, 9.8, 3.7, 24.8, 10.4, 8.87, 10.15] // Ускорение свободного падения
     
     let temperatures = [167, 457, 14, -55, -153, -185, -214, -225] // в цельсиях
-    
-    //  привет
-    // прайвит лет ойляля: String = [это массивчик]
-    // а это не массивчик, это просто строка такая 
+   
 }
