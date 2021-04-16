@@ -184,7 +184,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Din-jd-flt">
                                                 <rect key="frame" x="0.0" y="10.5" width="109" height="145.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="51g-qC-yKp">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_2021-04-16 20.55.27-2" translatesAutoresizingMaskIntoConstraints="NO" id="51g-qC-yKp">
                                                         <rect key="frame" x="0.0" y="0.0" width="109" height="109"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@d0bsson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5k-De-GI5">
@@ -198,7 +198,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fWI-Ll-4gv">
                                                 <rect key="frame" x="139" y="10.5" width="109" height="145.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p6I-oQ-tkV">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_2021-04-16 21.01.13" translatesAutoresizingMaskIntoConstraints="NO" id="p6I-oQ-tkV">
                                                         <rect key="frame" x="0.0" y="0.0" width="109" height="109"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@mishabux" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmO-QY-ADV">
@@ -425,6 +425,8 @@
     <resources>
         <image name="LoginWallpaper" width="1170" height="2532"/>
         <image name="MainWallpaper" width="564" height="1002"/>
+        <image name="photo_2021-04-16 20.55.27-2" width="109" height="109"/>
+        <image name="photo_2021-04-16 21.01.13" width="109" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
