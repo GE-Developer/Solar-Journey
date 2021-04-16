@@ -31,4 +31,6 @@ class ParameterManager {
     let g = [3.7, 8.87, 9.8, 3.7, 24.8, 10.4, 8.87, 10.15] // Ускорение свободного падения
     
     let temperatures = [167, 457, 14, -55, -153, -185, -214, -225] // в цельсиях
+    
+    let colors = ["red", "green", "blue", "red", "pink", "silver", "gold", "black"] 
 }
