@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE4978E72628F8CB00F78939 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4978E62628F8CB00F78939 /* LoginViewController.swift */; };
 		EE772D972628EEDE00C8415D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE772D962628EEDE00C8415D /* AppDelegate.swift */; };
 		EE772D992628EEDE00C8415D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE772D982628EEDE00C8415D /* SceneDelegate.swift */; };
-		EE772D9B2628EEDE00C8415D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE772D9A2628EEDE00C8415D /* ViewController.swift */; };
+		EE772D9B2628EEDE00C8415D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE772D9A2628EEDE00C8415D /* StartViewController.swift */; };
 		EE772D9E2628EEDE00C8415D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE772D9C2628EEDE00C8415D /* Main.storyboard */; };
 		EE772DA02628EEDF00C8415D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE772D9F2628EEDF00C8415D /* Assets.xcassets */; };
 		EE772DA32628EEDF00C8415D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE772DA12628EEDF00C8415D /* LaunchScreen.storyboard */; };
+		EEC22C952629230900D56C69 /* InfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC22C942629230900D56C69 /* InfoManager.swift */; };
+		EECC16AD2629448900551E65 /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC16AC2629448900551E65 /* DeveloperViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE4978E62628F8CB00F78939 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EE772D932628EEDE00C8415D /* Solar Journey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Solar Journey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE772D962628EEDE00C8415D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE772D982628EEDE00C8415D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE772D9A2628EEDE00C8415D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE772D9A2628EEDE00C8415D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		EE772D9D2628EEDE00C8415D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE772D9F2628EEDF00C8415D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE772DA22628EEDF00C8415D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE772DA42628EEDF00C8415D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEC22C942629230900D56C69 /* InfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoManager.swift; sourceTree = "<group>"; };
+		EECC16AC2629448900551E65 /* DeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,66 @@
 		EE772D952628EEDE00C8415D /* Solar Journey */ = {
 			isa = PBXGroup;
 			children = (
-				EE772D962628EEDE00C8415D /* AppDelegate.swift */,
-				EE772D982628EEDE00C8415D /* SceneDelegate.swift */,
-				EE772D9A2628EEDE00C8415D /* ViewController.swift */,
-				EE772D9C2628EEDE00C8415D /* Main.storyboard */,
-				EE772D9F2628EEDF00C8415D /* Assets.xcassets */,
-				EE772DA12628EEDF00C8415D /* LaunchScreen.storyboard */,
-				EE772DA42628EEDF00C8415D /* Info.plist */,
+				EEC22C93262922D500D56C69 /* Models */,
+				EEC22C92262922CB00D56C69 /* Services */,
+				EE772DB02628EF1F00C8415D /* Supports */,
+				EE772DAE2628EF0B00C8415D /* ViewControllers */,
+				EE772DAD2628EF0000C8415D /* Storyboards */,
+				EE772DAC2628EEF000C8415D /* Resources */,
 			);
 			path = "Solar Journey";
+			sourceTree = "<group>";
+		};
+		EE772DAC2628EEF000C8415D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE772D9F2628EEDF00C8415D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE772DAD2628EF0000C8415D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EE772D9C2628EEDE00C8415D /* Main.storyboard */,
+				EE772DA12628EEDF00C8415D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EE772DAE2628EF0B00C8415D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE772D9A2628EEDE00C8415D /* StartViewController.swift */,
+				EE4978E62628F8CB00F78939 /* LoginViewController.swift */,
+				EECC16AC2629448900551E65 /* DeveloperViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EE772DB02628EF1F00C8415D /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				EE772D962628EEDE00C8415D /* AppDelegate.swift */,
+				EE772D982628EEDE00C8415D /* SceneDelegate.swift */,
+				EE772DA42628EEDF00C8415D /* Info.plist */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		EEC22C92262922CB00D56C69 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EEC22C942629230900D56C69 /* InfoManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EEC22C93262922D500D56C69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE772D9B2628EEDE00C8415D /* ViewController.swift in Sources */,
+				EE4978E72628F8CB00F78939 /* LoginViewController.swift in Sources */,
+				EEC22C952629230900D56C69 /* InfoManager.swift in Sources */,
+				EE772D9B2628EEDE00C8415D /* StartViewController.swift in Sources */,
 				EE772D972628EEDE00C8415D /* AppDelegate.swift in Sources */,
 				EE772D992628EEDE00C8415D /* SceneDelegate.swift in Sources */,
+				EECC16AD2629448900551E65 /* DeveloperViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Solar Journey/Info.plist";
+				INFOPLIST_FILE = "Solar Journey/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "GE-Developer.Solar-Journey";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,7 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Solar Journey/Info.plist";
+				INFOPLIST_FILE = "Solar Journey/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "GE-Developer.Solar-Journey";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

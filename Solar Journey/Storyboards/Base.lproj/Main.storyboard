@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S7c-RX-kzV">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Myu-h2-oUQ">
+            <objects>
+                <navigationController id="S7c-RX-kzV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="oXG-1M-JTT">
+                        <rect key="frame" x="0.0" y="44" width="428" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Tbj-3X-i8N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="idr-aI-Tml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-691" y="94"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="Solar_Journey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainVallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="Zle-aE-Y7I">
+                                <rect key="frame" x="-73" y="-38" width="564" height="1002"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zle-aE-Y7I" secondAttribute="height" multiplier="94:167" id="KSY-ky-kdy"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-Bz-FT8">
+                                <rect key="frame" x="50" y="399" width="328" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWn-3A-1gE">
+                                        <rect key="frame" x="101" y="0.0" width="126" height="44"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="31"/>
+                                        <state key="normal" title="English">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="englishButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="RSi-SY-gp1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YF7-MX-3gy">
+                                        <rect key="frame" x="95" y="84" width="138" height="44"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="31"/>
+                                        <state key="normal" title="Русский">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="russianButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="o0U-ti-ebL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ggg-Bz-FT8" secondAttribute="trailing" constant="50" id="Adn-Pg-TZR"/>
+                            <constraint firstItem="Zle-aE-Y7I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5" id="OyX-I3-YfH"/>
+                            <constraint firstItem="Ggg-Bz-FT8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T3e-p3-RHW"/>
+                            <constraint firstItem="Zle-aE-Y7I" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="282:463" id="edQ-eq-VUN"/>
+                            <constraint firstItem="Ggg-Bz-FT8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="o25-sW-ptn"/>
+                            <constraint firstItem="Zle-aE-Y7I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="otz-kG-ftv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JdD-8w-f5s"/>
+                    <connections>
+                        <outlet property="englishButton" destination="IWn-3A-1gE" id="YpJ-KX-o0y"/>
+                        <outlet property="russianButton" destination="YF7-MX-3gy" id="WGs-Xy-Nah"/>
+                        <segue destination="th9-OU-ubH" kind="show" identifier="showLoginView" id="Y4b-JF-6Qg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-56" y="94"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="xcC-Li-VUW">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="th9-OU-ubH" customClass="LoginViewController" customModule="Solar_Journey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ujd-rp-E9n">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginWallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="l7P-6q-8kU">
+                                <rect key="frame" x="-371" y="-69" width="1170" height="1064"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcO-Ad-Zkm">
+                                <rect key="frame" x="70" y="833" width="283" height="39"/>
+                                <color key="backgroundColor" red="0.032302394259999999" green="0.60514608059999997" blue="0.00020361088630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="26"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="englishButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSf-Q3-usR"/>
+                                    <segue destination="YJr-SG-xWU" kind="show" id="Rz1-uu-wdi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's visit other planets and find out your weight there?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8M-t4-Ayf">
+                                <rect key="frame" x="30" y="156" width="368" height="82.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xID-KK-hDj">
+                                <rect key="frame" x="30" y="450.33333333333331" width="368" height="105.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your weight on Earth?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gm-pe-2gx">
+                                        <rect key="frame" x="40.333333333333343" y="0.0" width="287.66666666666663" height="53"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iaD-pG-86W">
+                                        <rect key="frame" x="144" y="69.000000000000057" width="80" height="36.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="6ky-F0-6aW"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="26"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gAH-nn-Ctl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r8M-t4-Ayf" firstAttribute="top" secondItem="gAH-nn-Ctl" secondAttribute="top" constant="16" id="7VT-iN-D7S"/>
+                            <constraint firstItem="l7P-6q-8kU" firstAttribute="centerX" secondItem="ujd-rp-E9n" secondAttribute="centerX" id="ASx-kr-g8x"/>
+                            <constraint firstItem="l7P-6q-8kU" firstAttribute="centerY" secondItem="ujd-rp-E9n" secondAttribute="centerY" id="HuO-dL-Lap"/>
+                            <constraint firstItem="xID-KK-hDj" firstAttribute="centerY" secondItem="ujd-rp-E9n" secondAttribute="centerY" constant="40" id="KjR-ig-g55"/>
+                            <constraint firstItem="gAH-nn-Ctl" firstAttribute="bottom" secondItem="OcO-Ad-Zkm" secondAttribute="bottom" constant="20" id="X5P-fP-G9d"/>
+                            <constraint firstItem="gAH-nn-Ctl" firstAttribute="trailing" secondItem="OcO-Ad-Zkm" secondAttribute="trailing" constant="75" id="ZRd-pK-8dq"/>
+                            <constraint firstItem="gAH-nn-Ctl" firstAttribute="trailing" secondItem="r8M-t4-Ayf" secondAttribute="trailing" constant="30" id="ay3-5h-CS2"/>
+                            <constraint firstItem="r8M-t4-Ayf" firstAttribute="leading" secondItem="gAH-nn-Ctl" secondAttribute="leading" constant="30" id="ayk-t7-3ju"/>
+                            <constraint firstItem="OcO-Ad-Zkm" firstAttribute="leading" secondItem="gAH-nn-Ctl" secondAttribute="leading" constant="70" id="bbe-y7-ArB"/>
+                            <constraint firstAttribute="trailing" secondItem="xID-KK-hDj" secondAttribute="trailing" constant="30" id="gs4-kf-oqE"/>
+                            <constraint firstAttribute="bottom" secondItem="l7P-6q-8kU" secondAttribute="bottom" constant="-69" id="imy-7t-zdo"/>
+                            <constraint firstItem="xID-KK-hDj" firstAttribute="leading" secondItem="gAH-nn-Ctl" secondAttribute="leading" constant="30" id="vy8-cE-lSX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="Qen-ag-RGB"/>
+                    <connections>
+                        <outlet property="continueButton" destination="OcO-Ad-Zkm" id="Ncc-hj-tJ9"/>
+                        <outlet property="introLabel" destination="r8M-t4-Ayf" id="M0t-ye-WJX"/>
+                        <outlet property="weightQuestionLabel" destination="6gm-pe-2gx" id="gnG-l5-AjI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zow-4b-fex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="572" y="94"/>
+        </scene>
+        <!--Developers-->
+        <scene sceneID="VFw-BF-PQj">
+            <objects>
+                <viewController id="7Ys-vg-9no" customClass="DeveloperViewController" customModule="Solar_Journey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3M2-fw-vv1">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginWallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="cwc-rJ-TIE">
+                                <rect key="frame" x="-371" y="-69" width="1170" height="1064"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fWQ-cL-vqA">
+                                <rect key="frame" x="-6" y="183.33333333333331" width="440" height="559.33333333333348"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hpW-BB-nS7">
+                                        <rect key="frame" x="85" y="0.0" width="270" height="274.66666666666669"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Din-jd-flt">
+                                                <rect key="frame" x="0.0" y="59.333333333333329" width="120" height="156.33333333333337"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="51g-qC-yKp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@d0bsson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5k-De-GI5">
+                                                        <rect key="frame" x="0.0" y="136.00000000000003" width="120" height="20.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fWI-Ll-4gv">
+                                                <rect key="frame" x="150" y="59.333333333333329" width="120" height="156.33333333333337"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p6I-oQ-tkV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@mishabux" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmO-QY-ADV">
+                                                        <rect key="frame" x="0.0" y="136.00000000000003" width="120" height="20.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fx3-YI-tbO">
+                                        <rect key="frame" x="85" y="284.66666666666663" width="270" height="274.66666666666663"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="p6i-bi-93k">
+                                                <rect key="frame" x="0.0" y="59.000000000000014" width="120" height="156.33333333333337"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xmb-JV-ym5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Balooou" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVf-xN-Dwv">
+                                                        <rect key="frame" x="0.0" y="136" width="120" height="20.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="OW7-am-x1J">
+                                                <rect key="frame" x="150" y="59.000000000000014" width="120" height="156.33333333333337"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uos-Th-OCa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0W-WN-C4e">
+                                                        <rect key="frame" x="0.0" y="136" width="120" height="20.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fWQ-cL-vqA" secondAttribute="height" multiplier="270:343" id="qSu-uh-Zh3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nfa-ZN-82O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cwc-rJ-TIE" firstAttribute="centerX" secondItem="3M2-fw-vv1" secondAttribute="centerX" id="AUx-6d-2Ik"/>
+                            <constraint firstItem="fWQ-cL-vqA" firstAttribute="centerX" secondItem="3M2-fw-vv1" secondAttribute="centerX" id="ZJg-Ub-Sfc"/>
+                            <constraint firstItem="fWQ-cL-vqA" firstAttribute="centerY" secondItem="3M2-fw-vv1" secondAttribute="centerY" id="eRC-s9-K48"/>
+                            <constraint firstAttribute="bottom" secondItem="cwc-rJ-TIE" secondAttribute="bottom" constant="-69" id="m3N-Db-rFv"/>
+                            <constraint firstItem="fWQ-cL-vqA" firstAttribute="width" secondItem="3M2-fw-vv1" secondAttribute="height" multiplier="135:284" id="pVw-dM-ybj"/>
+                            <constraint firstItem="cwc-rJ-TIE" firstAttribute="centerY" secondItem="3M2-fw-vv1" secondAttribute="centerY" id="spk-ha-iFu"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Developers" id="uyf-hN-noh"/>
+                    <connections>
+                        <outlet property="devOneImage" destination="p6I-oQ-tkV" id="Ppp-eo-VjW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ey7-Bd-p0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1978" y="430"/>
+        </scene>
+        <!--Solar System-->
+        <scene sceneID="jcV-9H-UpO">
+            <objects>
+                <tabBarController id="YJr-SG-xWU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Solar System" id="cqT-Gr-sdI"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v8b-SP-GnH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dB8-46-yOy" kind="relationship" relationship="viewControllers" id="eJW-lX-3kB"/>
+                        <segue destination="7Ys-vg-9no" kind="relationship" relationship="viewControllers" id="SvK-g2-06x"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VN1-WC-1Iw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1211" y="94"/>
+        </scene>
+        <!--Planets-->
+        <scene sceneID="wdO-i8-JfN">
+            <objects>
+                <tableViewController id="dB8-46-yOy" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CfN-sl-Jd8">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="planet" id="wDj-lR-Nj8">
+                                <rect key="frame" x="0.0" y="28" width="428" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wDj-lR-Nj8" id="Fmo-VW-9pj">
+                                    <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="7Uf-qq-Akc" kind="show" id="5iW-9h-b6L"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dB8-46-yOy" id="DkN-Q4-k7F"/>
+                            <outlet property="delegate" destination="dB8-46-yOy" id="FFA-Ca-Ag9"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Planets" id="fJu-7B-Ec3"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uqZ-ZI-ysd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1979" y="-214"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FhE-NR-aXo">
+            <objects>
+                <viewController id="7Uf-qq-Akc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f0I-if-zhb">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginWallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="zLo-4l-aHT">
+                                <rect key="frame" x="-371" y="-69" width="1170" height="1064"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OwU-3O-jZp">
+                                <rect key="frame" x="85" y="140" width="258" height="258"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OwU-3O-jZp" secondAttribute="height" multiplier="1:1" id="Zv4-jg-f91"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUm-ez-6SR">
+                                <rect key="frame" x="75" y="833" width="278" height="39"/>
+                                <color key="backgroundColor" red="0.032302394259999999" green="0.60514608059999997" blue="0.00020361088630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="26"/>
+                                <state key="normal" title="My weight">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="englishButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="mHN-Xp-Oxj"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="HI4-Pa-vWE">
+                                <rect key="frame" x="181" y="432.99999999999994" width="66.333333333333314" height="240.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtk-Dh-EdS">
+                                        <rect key="frame" x="0.0" y="0.0" width="66.333333333333329" height="22.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyo-8b-L6Y">
+                                        <rect key="frame" x="0.0" y="36.333333333333314" width="66.333333333333329" height="22.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W9-JW-Wms">
+                                        <rect key="frame" x="0.0" y="72.666666666666686" width="66.333333333333329" height="22.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wM-5W-e4U">
+                                        <rect key="frame" x="0.0" y="109" width="66.333333333333329" height="22.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7i-ek-ts8">
+                                        <rect key="frame" x="0.0" y="145.33333333333337" width="66.333333333333329" height="22.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8e-Fg-awp">
+                                        <rect key="frame" x="0.0" y="181.66666666666663" width="66.333333333333329" height="22.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfD-Ov-lnf">
+                                        <rect key="frame" x="0.0" y="218" width="66.333333333333329" height="22.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NK1-vA-YL8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zLo-4l-aHT" firstAttribute="centerY" secondItem="f0I-if-zhb" secondAttribute="centerY" id="1Fr-Sk-bn2"/>
+                            <constraint firstItem="OwU-3O-jZp" firstAttribute="leading" secondItem="NK1-vA-YL8" secondAttribute="leading" constant="85" id="3y5-6A-Ujy"/>
+                            <constraint firstAttribute="bottom" secondItem="zLo-4l-aHT" secondAttribute="bottom" constant="-69" id="CMY-at-mZJ"/>
+                            <constraint firstItem="NK1-vA-YL8" firstAttribute="trailing" secondItem="YUm-ez-6SR" secondAttribute="trailing" constant="75" id="Cyw-T4-rTM"/>
+                            <constraint firstItem="HI4-Pa-vWE" firstAttribute="centerX" secondItem="f0I-if-zhb" secondAttribute="centerX" id="Fzi-0X-wht"/>
+                            <constraint firstItem="zLo-4l-aHT" firstAttribute="centerX" secondItem="f0I-if-zhb" secondAttribute="centerX" id="Mnr-In-Fbg"/>
+                            <constraint firstItem="NK1-vA-YL8" firstAttribute="trailing" secondItem="OwU-3O-jZp" secondAttribute="trailing" constant="85" id="YFf-hS-k4r"/>
+                            <constraint firstItem="YUm-ez-6SR" firstAttribute="leading" secondItem="NK1-vA-YL8" secondAttribute="leading" constant="75" id="baZ-Cl-BPb"/>
+                            <constraint firstItem="HI4-Pa-vWE" firstAttribute="centerY" secondItem="f0I-if-zhb" secondAttribute="centerY" constant="90" id="n67-hO-BrI"/>
+                            <constraint firstItem="NK1-vA-YL8" firstAttribute="bottom" secondItem="YUm-ez-6SR" secondAttribute="bottom" constant="20" id="o78-bN-7Vz"/>
+                            <constraint firstItem="OwU-3O-jZp" firstAttribute="top" secondItem="NK1-vA-YL8" secondAttribute="top" id="vFN-X6-dTf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JZu-Qd-Wbf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zD-g5-iD3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2677.5" y="-214.43661971830986"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LoginWallpaper" width="1170" height="2532"/>
+        <image name="MainVallpaper" width="564" height="1002"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
