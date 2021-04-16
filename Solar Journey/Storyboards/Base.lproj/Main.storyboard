@@ -262,9 +262,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Developers" id="uyf-hN-noh"/>
-                    <connections>
-                        <outlet property="devOneImage" destination="p6I-oQ-tkV" id="Ppp-eo-VjW"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ey7-Bd-p0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -294,7 +291,7 @@
         <!--Planets-->
         <scene sceneID="wdO-i8-JfN">
             <objects>
-                <tableViewController id="dB8-46-yOy" sceneMemberID="viewController">
+                <tableViewController id="dB8-46-yOy" customClass="PlanetsListTableViewController" customModule="Solar_Journey" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CfN-sl-Jd8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -321,7 +318,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqZ-ZI-ysd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1979" y="-214"/>
+            <point key="canvasLocation" x="1978.125" y="-214.43661971830986"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FhE-NR-aXo">

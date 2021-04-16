@@ -8,16 +8,21 @@
 import UIKit
 
 class StartViewController: UIViewController {
-
-    var engLanguage: Bool!
     
+    // MARK: - IB Outlets
     @IBOutlet var englishButton: UIButton!
     @IBOutlet var russianButton: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // MARK: - Private Properties
+    private var engLanguage: Bool!
+    
+    // MARK: - Override Methods
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let loginVC = segue.destination as? LoginViewController else { return }
+        loginVC.engLanguage = engLanguage
     }
     
+    // MARK: - IB Actions
     @IBAction func englishButtonPressed() {
         englishButton.alpha = 1
         russianButton.alpha = 0.4
@@ -30,11 +35,6 @@ class StartViewController: UIViewController {
         russianButton.alpha = 1
         engLanguage = true
         performSegue(withIdentifier: "showLoginView", sender: nil)
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let loginVC = segue.destination as? LoginViewController else { return }
-        loginVC.engLanguage = engLanguage
     }
     
 }
