@@ -17,6 +17,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         planetImageView.image = UIImage(named: planet.planetEng)
         planetImageView.layer.cornerRadius = planetImageView.frame.height / 2
+        
     }
 
 }
