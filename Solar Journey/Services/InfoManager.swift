@@ -32,5 +32,5 @@ class ParameterManager {
     
     let temperatures = [167, 457, 14, -55, -153, -185, -214, -225] // в цельсиях
     
-    let colors = ["red", "green", "blue", "red", "pink", "silver", "gold", "black"] 
+    
 }
