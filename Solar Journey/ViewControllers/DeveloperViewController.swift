@@ -19,13 +19,15 @@ class DeveloperViewController: UIViewController {
     @IBOutlet weak var balooouLabel: UILabel!
     @IBOutlet weak var abLabel: UILabel!
     
-    var person: Planet!
     var person1: InfoManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         customizeImages()
-        d0bssonLabel.text = InfoManager.shared.nickNames.first
+        d0bssonLabel.text = InfoManager.shared.nickNames[0]
+        mishabuxLabel.text = InfoManager.shared.nickNames[1]
+        balooouLabel.text = InfoManager.shared.nickNames[2]
+        abLabel.text = InfoManager.shared.nickNames[3]
     }
 
 }
