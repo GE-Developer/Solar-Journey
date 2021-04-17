@@ -29,7 +29,6 @@ class PlanetsListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "planet", for: indexPath)
         let planet = planets[indexPath.row]
         
-        
         var content = cell.defaultContentConfiguration()
         
         if rusLanguage {
@@ -41,6 +40,7 @@ class PlanetsListTableViewController: UITableViewController {
         
         content.image = UIImage(named: planet.planetEng)
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
+        content.textProperties.color = .white
         cell.contentConfiguration = content
         
         return cell

@@ -12,9 +12,17 @@
         <scene sceneID="Myu-h2-oUQ">
             <objects>
                 <navigationController id="S7c-RX-kzV" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="oXG-1M-JTT">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="oXG-1M-JTT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Tbj-3X-i8N"/>
@@ -278,15 +286,14 @@
             </objects>
             <point key="canvasLocation" x="1978" y="430"/>
         </scene>
-        <!--Solar System-->
+        <!--Tab Bar Controller-->
         <scene sceneID="jcV-9H-UpO">
             <objects>
-                <tabBarController id="YJr-SG-xWU" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Solar System" id="cqT-Gr-sdI"/>
+                <tabBarController interfaceStyle="dark" id="YJr-SG-xWU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="cqT-Gr-sdI"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v8b-SP-GnH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -306,15 +313,17 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CfN-sl-Jd8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.10680582030000001" green="0.1078633037" blue="0.1078633037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="planet" id="wDj-lR-Nj8">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="planet" id="wDj-lR-Nj8">
                                 <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wDj-lR-Nj8" id="Fmo-VW-9pj">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.10680582030000001" green="0.1078633037" blue="0.1078633037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="7Uf-qq-Akc" kind="show" id="5iW-9h-b6L"/>
                                 </connections>
@@ -360,10 +369,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8e-Fg-awp">
-                                <rect key="frame" x="16" y="261" width="288" height="22.5"/>
+                                <rect key="frame" x="16" y="276" width="288" height="22.5"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="22"/>
-                                <color key="textColor" systemColor="systemGray3Color"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NK1-vA-YL8"/>
@@ -376,7 +385,7 @@
                             <constraint firstItem="NK1-vA-YL8" firstAttribute="trailing" secondItem="YUm-ez-6SR" secondAttribute="trailing" constant="75" id="Cyw-T4-rTM"/>
                             <constraint firstItem="NK1-vA-YL8" firstAttribute="trailing" secondItem="k8e-Fg-awp" secondAttribute="trailing" constant="16" id="KcH-11-qJk"/>
                             <constraint firstItem="zLo-4l-aHT" firstAttribute="centerX" secondItem="f0I-if-zhb" secondAttribute="centerX" id="Mnr-In-Fbg"/>
-                            <constraint firstItem="k8e-Fg-awp" firstAttribute="top" secondItem="OwU-3O-jZp" secondAttribute="bottom" constant="20" id="Rep-fA-D2O"/>
+                            <constraint firstItem="k8e-Fg-awp" firstAttribute="top" secondItem="OwU-3O-jZp" secondAttribute="bottom" constant="35" id="Rep-fA-D2O"/>
                             <constraint firstItem="NK1-vA-YL8" firstAttribute="trailing" secondItem="OwU-3O-jZp" secondAttribute="trailing" constant="85" id="YFf-hS-k4r"/>
                             <constraint firstItem="YUm-ez-6SR" firstAttribute="leading" secondItem="NK1-vA-YL8" secondAttribute="leading" constant="75" id="baZ-Cl-BPb"/>
                             <constraint firstItem="NK1-vA-YL8" firstAttribute="bottom" secondItem="YUm-ez-6SR" secondAttribute="bottom" constant="20" id="o78-bN-7Vz"/>
@@ -386,6 +395,7 @@
                     <navigationItem key="navigationItem" id="JZu-Qd-Wbf"/>
                     <connections>
                         <outlet property="detailLabel" destination="k8e-Fg-awp" id="VjA-N2-kEv"/>
+                        <outlet property="myWeightButton" destination="YUm-ez-6SR" id="AUD-Fx-YeT"/>
                         <outlet property="planetImageView" destination="OwU-3O-jZp" id="uuU-LM-7ZD"/>
                     </connections>
                 </viewController>
@@ -404,9 +414,6 @@
         <image name="photo_2021-04-16 21.01.13" width="109" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -43,8 +43,7 @@ extension Planet {
                                 mass: masses[index],
                                 hoursInDay: hoursInDay[index],
                                 g: g[index],
-                                temperature: temperatures[index]
-                                )
+                                temperature: temperatures[index])
             planets.append(planet)
         }
         return planets
