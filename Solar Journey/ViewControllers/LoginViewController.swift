@@ -27,14 +27,9 @@ class LoginViewController: UIViewController {
         guard let viewControllers = tabBarController.viewControllers else { return }
         
         
-            if let planetsListVC = viewControllers.first as? PlanetsListTableViewController {
-                planetsListVC.rusLanguage = rusLanguage
-            }
-            
-        
-        
-            
-        
+        if let planetsListVC = viewControllers.first as? PlanetsListTableViewController {
+            planetsListVC.rusLanguage = rusLanguage
+        }
     }
     
     private func changeLanguage() {

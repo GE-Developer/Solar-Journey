@@ -13,6 +13,7 @@ class DetailViewController: UIViewController {
     
     var planet: Planet!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         planetImageView.image = UIImage(named: planet.planetEng)

@@ -29,5 +29,7 @@ class InfoManager {
     
     let temperatures = [167, 457, 14, -55, -153, -185, -214, -225] // в цельсиях
     
+    let nickNames = ["@d0bsson", "@mishabux", "@balooou", "@AB"] //  names for images
+    
     private init() {}
 }

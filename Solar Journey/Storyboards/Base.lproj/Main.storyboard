@@ -187,7 +187,7 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_2021-04-16 20.55.27-2" translatesAutoresizingMaskIntoConstraints="NO" id="51g-qC-yKp">
                                                         <rect key="frame" x="0.0" y="0.0" width="109" height="109"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@d0bsson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5k-De-GI5">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nickName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5k-De-GI5">
                                                         <rect key="frame" x="0.0" y="124.99999999999999" width="109" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -201,7 +201,7 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_2021-04-16 21.01.13" translatesAutoresizingMaskIntoConstraints="NO" id="p6I-oQ-tkV">
                                                         <rect key="frame" x="0.0" y="0.0" width="109" height="109"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@mishabux" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmO-QY-ADV">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nickName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmO-QY-ADV">
                                                         <rect key="frame" x="0.0" y="124.99999999999999" width="109" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -220,7 +220,7 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_2021-04-16 20.12.42" translatesAutoresizingMaskIntoConstraints="NO" id="Xmb-JV-ym5">
                                                         <rect key="frame" x="0.0" y="0.0" width="109" height="109"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Balooou" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVf-xN-Dwv">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nickName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVf-xN-Dwv">
                                                         <rect key="frame" x="0.0" y="124.99999999999999" width="109" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -234,7 +234,7 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_2021-04-16 20.55.27-2" translatesAutoresizingMaskIntoConstraints="NO" id="Uos-Th-OCa">
                                                         <rect key="frame" x="0.0" y="0.0" width="109" height="109"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0W-WN-C4e">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nickName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0W-WN-C4e">
                                                         <rect key="frame" x="0.0" y="124.99999999999999" width="109" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -264,9 +264,13 @@
                     <tabBarItem key="tabBarItem" title="Developers" image="person.2.fill" catalog="system" id="uyf-hN-noh"/>
                     <connections>
                         <outlet property="abImageView" destination="Uos-Th-OCa" id="sac-lM-vUG"/>
+                        <outlet property="abLabel" destination="n0W-WN-C4e" id="GfA-Vu-1qK"/>
                         <outlet property="balooouImageView" destination="Xmb-JV-ym5" id="7Ut-4t-64E"/>
+                        <outlet property="balooouLabel" destination="iVf-xN-Dwv" id="XhH-Pa-WSy"/>
                         <outlet property="d0bssonImageView" destination="51g-qC-yKp" id="693-Ms-Ydx"/>
+                        <outlet property="d0bssonLabel" destination="p5k-De-GI5" id="iIk-aA-AFg"/>
                         <outlet property="mishabuxImageView" destination="p6I-oQ-tkV" id="yMI-TT-2Gf"/>
+                        <outlet property="mishabuxLabel" destination="EmO-QY-ADV" id="09x-ak-vNN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ey7-Bd-p0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

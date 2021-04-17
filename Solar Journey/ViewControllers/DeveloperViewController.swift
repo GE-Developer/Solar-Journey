@@ -14,18 +14,25 @@ class DeveloperViewController: UIViewController {
     @IBOutlet weak var balooouImageView: UIImageView!
     @IBOutlet weak var abImageView: UIImageView!
     
+    @IBOutlet weak var d0bssonLabel: UILabel!
+    @IBOutlet weak var mishabuxLabel: UILabel!
+    @IBOutlet weak var balooouLabel: UILabel!
+    @IBOutlet weak var abLabel: UILabel!
+    
+    var person: Planet!
+    var person1: InfoManager!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.setHidesBackButton(true, animated: false)
         customizeImages()
-        
+        d0bssonLabel.text = InfoManager.shared.nickNames.first
     }
 
 }
 
 extension DeveloperViewController {
-    func customizeImages() {
+    
+    private func customizeImages() {
         d0bssonImageView.layer.cornerRadius = d0bssonImageView.frame.height / 2
         d0bssonImageView.layer.borderWidth = 3
         d0bssonImageView.layer.borderColor = #colorLiteral(red: 0.8717630506, green: 0.8421882391, blue: 0.8511785865, alpha: 1).cgColor
