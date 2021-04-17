@@ -9,6 +9,7 @@ import UIKit
 
 class DeveloperViewController: UIViewController {
     
+    
     @IBOutlet weak var d0bssonImageView: UIImageView!
     @IBOutlet weak var mishabuxImageView: UIImageView!
     @IBOutlet weak var balooouImageView: UIImageView!
@@ -19,12 +20,12 @@ class DeveloperViewController: UIViewController {
     @IBOutlet weak var balooouLabel: UILabel!
     @IBOutlet weak var abLabel: UILabel!
     
-    var person1: InfoManager!
+    var person: InfoManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         customizeImages()
-        d0bssonLabel.text = InfoManager.shared.nickNames[0]
+        d0bssonLabel.text = Developer().dev["dev1"]
         mishabuxLabel.text = InfoManager.shared.nickNames[1]
         balooouLabel.text = InfoManager.shared.nickNames[2]
         abLabel.text = InfoManager.shared.nickNames[3]

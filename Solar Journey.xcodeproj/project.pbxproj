@@ -19,6 +19,7 @@
 		EE772DA32628EEDF00C8415D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE772DA12628EEDF00C8415D /* LaunchScreen.storyboard */; };
 		EEC22C952629230900D56C69 /* InfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC22C942629230900D56C69 /* InfoManager.swift */; };
 		EECC16AD2629448900551E65 /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC16AC2629448900551E65 /* DeveloperViewController.swift */; };
+		EEFFF558262B049C0004C2C9 /* DeveloperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFFF557262B049C0004C2C9 /* DeveloperManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		EE772DA42628EEDF00C8415D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEC22C942629230900D56C69 /* InfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoManager.swift; sourceTree = "<group>"; };
 		EECC16AC2629448900551E65 /* DeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperViewController.swift; sourceTree = "<group>"; };
+		EEFFF557262B049C0004C2C9 /* DeveloperManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				EEC22C942629230900D56C69 /* InfoManager.swift */,
+				EEFFF557262B049C0004C2C9 /* DeveloperManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				EE4978E72628F8CB00F78939 /* LoginViewController.swift in Sources */,
 				EE57611226296FF8007AE97A /* PlanetsListTableViewController.swift in Sources */,
 				3937357B262969500076BAAE /* Planet.swift in Sources */,
+				EEFFF558262B049C0004C2C9 /* DeveloperManager.swift in Sources */,
 				EEC22C952629230900D56C69 /* InfoManager.swift in Sources */,
 				EE772D9B2628EEDE00C8415D /* StartViewController.swift in Sources */,
 				EE772D972628EEDE00C8415D /* AppDelegate.swift in Sources */,

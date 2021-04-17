@@ -8,10 +8,14 @@
 import UIKit
 
 class PlanetsListTableViewController: UITableViewController {
-
-    var rusLanguage: Bool!
-    let planets = Planet.getPlanetList()
     
+    // MARK: - Public Properties
+    var rusLanguage: Bool!
+    
+    // MARK: - Private Properties
+    private let planets = Planet.getPlanetList()
+    
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
@@ -46,6 +50,7 @@ class PlanetsListTableViewController: UITableViewController {
         if let indexPath = tableView.indexPathForSelectedRow {
             let detailVC = segue.destination as! DetailViewController
             detailVC.planet = planets[indexPath.row]
+            detailVC.rusLanguage = rusLanguage
         }
     }
     

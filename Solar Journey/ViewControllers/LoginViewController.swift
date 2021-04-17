@@ -9,26 +9,24 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
-    var rusLanguage: Bool!
-    
+    // MARK: - IB Outlets
     @IBOutlet var weightQuestionLabel: UILabel!
     @IBOutlet var introLabel: UILabel!
+    
     @IBOutlet var continueButton: UIButton!
+    
     @IBOutlet weak var weightTF: UITextField!
     
+    // MARK: - Public Properties
+    var rusLanguage: Bool!
+    
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         continueButton.layer.cornerRadius = 12
         changeLanguage()
-        weightTF.delegate = self
+        weightTF.delegate = self  // что это
     }
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
-      {
-        let allowedCharacters = CharacterSet.decimalDigits
-        let characterSet = CharacterSet(charactersIn: string)
-        return allowedCharacters.isSuperset(of: characterSet)
-      }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tabBarController = segue.destination as! UITabBarController
@@ -40,6 +38,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             planetsListVC.rusLanguage = rusLanguage
         }
     }
+    
+    // MARK: - Private Methods
+    private func textField(textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+      {
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
+      }
+    
     
     private func changeLanguage() {
         if rusLanguage {

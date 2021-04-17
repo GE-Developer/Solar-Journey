@@ -4,7 +4,6 @@
 //
 //  Created by Bulat Kamalov on 16.04.2021.
 //
-import Foundation
 
 struct Planet {
     let planetEng: String
