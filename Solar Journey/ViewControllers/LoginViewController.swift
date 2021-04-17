@@ -7,19 +7,28 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     var rusLanguage: Bool!
     
     @IBOutlet var weightQuestionLabel: UILabel!
     @IBOutlet var introLabel: UILabel!
     @IBOutlet var continueButton: UIButton!
+    @IBOutlet weak var weightTF: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         continueButton.layer.cornerRadius = 12
         changeLanguage()
+        weightTF.delegate = self
     }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+      {
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
+      }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tabBarController = segue.destination as! UITabBarController

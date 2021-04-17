@@ -158,6 +158,7 @@
                         <outlet property="continueButton" destination="OcO-Ad-Zkm" id="Ncc-hj-tJ9"/>
                         <outlet property="introLabel" destination="r8M-t4-Ayf" id="M0t-ye-WJX"/>
                         <outlet property="weightQuestionLabel" destination="6gm-pe-2gx" id="gnG-l5-AjI"/>
+                        <outlet property="weightTF" destination="iaD-pG-86W" id="2zY-PZ-4Vo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zow-4b-fex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
