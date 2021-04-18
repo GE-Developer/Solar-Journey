@@ -16,6 +16,7 @@ class StartViewController: UIViewController {
     // MARK: - Private Properties
     private var rusLanguage: Bool!
     
+    
     // MARK: - Override Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let loginVC = segue.destination as? LoginViewController else { return }
@@ -24,6 +25,7 @@ class StartViewController: UIViewController {
     
     // MARK: - IB Actions
     @IBAction func englishButtonPressed() {
+        navigationItem.title = "Menu"
         englishButton.alpha = 1
         russianButton.alpha = 0.4
         rusLanguage = false
@@ -31,6 +33,7 @@ class StartViewController: UIViewController {
     }
     
     @IBAction func russianButtonPressed() {
+        navigationItem.title = "Меню"
         englishButton.alpha = 0.4
         russianButton.alpha = 1
         rusLanguage = true

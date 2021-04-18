@@ -64,6 +64,7 @@ extension DetailViewController {
 extension DetailViewController {
     private func showTextWithLanguage() {
         if rusLanguage {
+            navigationItem.title = planet.planetRus
             detailLabel.text = """
                            Радиус орбиты: \(planet.orbitRadius) млн. км.
                            Дней в году: \(planet.daysInYear)
@@ -75,6 +76,7 @@ extension DetailViewController {
                            """
             myWeightButton.setTitle("Мой вес", for: .normal)
         } else {
+            navigationItem.title = planet.planetEng
             detailLabel.text = """
                            Orbital radius: \(planet.orbitRadius) mln. km.
                            Days in year: \(planet.daysInYear)

@@ -25,7 +25,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         continueButton.layer.cornerRadius = 12
         changeLanguage()
-        weightTF.delegate = self  // что это
+        weightTF.delegate = self 
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -41,17 +41,27 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        textFieldMaxLength(textField: textField, maxLength: 2)
+        return allowedCharacters.isSuperset(of: characterSet)
+    }
+    
     
     
     // MARK: - Private Methods
-    private func textField(textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
-      {
-        let allowedCharacters = CharacterSet.decimalDigits
-        let characterSet = CharacterSet(charactersIn: string)
-        return allowedCharacters.isSuperset(of: characterSet)
-      }
     
-    
+    private func textFieldMaxLength(textField: UITextField!, maxLength: Int) {
+        if (textField.text!.count > maxLength) {
+            textField.deleteBackward()
+        }
+    }
+ 
     private func changeLanguage() {
         if rusLanguage {
             introLabel.text = "Посетим другие планеты и узнаем Ваш вес на них?"
