@@ -9,13 +9,17 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    // MARK: - IB Outlets
     @IBOutlet var planetImageView: UIImageView!
     @IBOutlet var detailLabel: UILabel!
     @IBOutlet var myWeightButton: UIButton!
     
+    // MARK: - Public Outlets
     var planet: Planet!
     var rusLanguage: Bool!
+    var weightTF: String!
     
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         myWeightButton.layer.cornerRadius = 12
@@ -27,6 +31,37 @@ class DetailViewController: UIViewController {
         planetImageView.image = UIImage(named: planet.planetEng)
     }
     
+    // MARK: - IB Actions
+    @IBAction func myWeightButtonPressed() {
+        guard let weightTF = Double(weightTF) else { return }
+        let weight = lround(weightTF / 9.8 * planet.g)
+        
+        if rusLanguage {
+            showAlert(with: "", "Понятно", and: "Ваш вес на планете \(planet.planetRus): \(weight) кг.")
+        } else {
+            showAlert(with: "", "Got it", and: "Your weight on \(planet.planetEng) is: \(weight) kg.")
+        }
+    }
+    
+}
+
+
+// MARK: - Extensions
+
+// MARK: Alert Controller
+extension DetailViewController {
+    private func showAlert(with title: String, _ okTitle: String, and message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertOK = UIAlertAction(title: okTitle, style:.default)
+        
+        alert.addAction(alertOK)
+        present(alert, animated: true)
+        }
+}
+
+// MARK: Work with text
+extension DetailViewController {
     private func showTextWithLanguage() {
         if rusLanguage {
             detailLabel.text = """
@@ -52,6 +87,6 @@ class DetailViewController: UIViewController {
             myWeightButton.setTitle("My weight", for: .normal)
         }
     }
-    
-    
 }
+
+

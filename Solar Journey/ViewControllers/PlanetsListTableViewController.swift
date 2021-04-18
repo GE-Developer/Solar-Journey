@@ -11,6 +11,7 @@ class PlanetsListTableViewController: UITableViewController {
     
     // MARK: - Public Properties
     var rusLanguage: Bool!
+    var weightTF: String!
     
     // MARK: - Private Properties
     private let planets = Planet.getPlanetList()
@@ -51,6 +52,7 @@ class PlanetsListTableViewController: UITableViewController {
             let detailVC = segue.destination as! DetailViewController
             detailVC.planet = planets[indexPath.row]
             detailVC.rusLanguage = rusLanguage
+            detailVC.weightTF = weightTF
         }
     }
     

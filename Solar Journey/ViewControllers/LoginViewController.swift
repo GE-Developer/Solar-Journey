@@ -32,12 +32,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let tabBarController = segue.destination as! UITabBarController
         
         guard let viewControllers = tabBarController.viewControllers else { return }
-        
+        viewControllers.first?.tabBarItem.title = rusLanguage ? "Планеты" : "Planets"
+        viewControllers.last?.tabBarItem.title = rusLanguage ? "Разработчики" : "Developers"
         
         if let planetsListVC = viewControllers.first as? PlanetsListTableViewController {
             planetsListVC.rusLanguage = rusLanguage
+            planetsListVC.weightTF = weightTF.text
         }
     }
+    
+    
     
     // MARK: - Private Methods
     private func textField(textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
@@ -52,9 +56,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if rusLanguage {
             introLabel.text = "Посетим другие планеты и узнаем Ваш вес на них?"
             weightQuestionLabel.text = "Сколько Вы весите на Земле?"
+            continueButton.setTitle("Далее", for: .normal)
         }
     }
     
+   
+    
 }
+
+
 
 
