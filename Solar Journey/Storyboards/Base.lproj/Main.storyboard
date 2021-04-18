@@ -272,24 +272,24 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Developers" image="person.2.fill" catalog="system" id="uyf-hN-noh"/>
                     <connections>
-                        <outlet property="abImageView" destination="Uos-Th-OCa" id="sac-lM-vUG"/>
-                        <outlet property="abLabel" destination="n0W-WN-C4e" id="GfA-Vu-1qK"/>
-                        <outlet property="balooouImageView" destination="Xmb-JV-ym5" id="7Ut-4t-64E"/>
-                        <outlet property="balooouLabel" destination="iVf-xN-Dwv" id="XhH-Pa-WSy"/>
-                        <outlet property="d0bssonImageView" destination="51g-qC-yKp" id="693-Ms-Ydx"/>
-                        <outlet property="d0bssonLabel" destination="p5k-De-GI5" id="iIk-aA-AFg"/>
-                        <outlet property="mishabuxImageView" destination="p6I-oQ-tkV" id="yMI-TT-2Gf"/>
-                        <outlet property="mishabuxLabel" destination="EmO-QY-ADV" id="09x-ak-vNN"/>
+                        <outletCollection property="nicknameLabels" destination="p5k-De-GI5" collectionClass="NSMutableArray" id="Vv7-Mf-Z43"/>
+                        <outletCollection property="nicknameLabels" destination="EmO-QY-ADV" collectionClass="NSMutableArray" id="PhE-0x-GqP"/>
+                        <outletCollection property="nicknameLabels" destination="iVf-xN-Dwv" collectionClass="NSMutableArray" id="0gZ-Hf-dcg"/>
+                        <outletCollection property="nicknameLabels" destination="n0W-WN-C4e" collectionClass="NSMutableArray" id="U2T-eG-pWM"/>
+                        <outletCollection property="photosImageView" destination="51g-qC-yKp" collectionClass="NSMutableArray" id="K5h-E6-ou4"/>
+                        <outletCollection property="photosImageView" destination="p6I-oQ-tkV" collectionClass="NSMutableArray" id="XRU-pm-M5O"/>
+                        <outletCollection property="photosImageView" destination="Xmb-JV-ym5" collectionClass="NSMutableArray" id="SOg-m1-Ky9"/>
+                        <outletCollection property="photosImageView" destination="Uos-Th-OCa" collectionClass="NSMutableArray" id="uk2-o8-emL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ey7-Bd-p0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1978" y="430"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="jcV-9H-UpO">
             <objects>
-                <tabBarController interfaceStyle="dark" id="YJr-SG-xWU" sceneMemberID="viewController">
+                <tabBarController interfaceStyle="dark" id="YJr-SG-xWU" customClass="TabBarViewController" customModule="Solar_Journey" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="cqT-Gr-sdI"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v8b-SP-GnH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>

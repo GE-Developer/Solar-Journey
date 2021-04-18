@@ -23,6 +23,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = rusLanguage ? "Путешествие" : "Travel"
         continueButton.layer.cornerRadius = 12
         changeLanguage()
         weightTF.delegate = self 
@@ -30,7 +31,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tabBarController = segue.destination as! UITabBarController
-        
+        tabBarController.navigationItem.title = rusLanguage ? "Планеты" : "Planets"
         guard let viewControllers = tabBarController.viewControllers else { return }
         viewControllers.first?.tabBarItem.title = rusLanguage ? "Планеты" : "Planets"
         viewControllers.last?.tabBarItem.title = rusLanguage ? "Разработчики" : "Developers"

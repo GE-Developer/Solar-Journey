@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0418088A262C41E4005C973B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04180889262C41E4005C973B /* TabBarViewController.swift */; };
 		3937357B262969500076BAAE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3937357A262969500076BAAE /* Planet.swift */; };
 		EE3D4B17262A0BF50019F781 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3D4B16262A0BF50019F781 /* DetailViewController.swift */; };
 		EE4978E72628F8CB00F78939 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4978E62628F8CB00F78939 /* LoginViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04180889262C41E4005C973B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3937357A262969500076BAAE /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		EE3D4B16262A0BF50019F781 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EE4978E62628F8CB00F78939 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				EE772D9A2628EEDE00C8415D /* StartViewController.swift */,
 				EE4978E62628F8CB00F78939 /* LoginViewController.swift */,
 				EE57611126296FF8007AE97A /* PlanetsListTableViewController.swift */,
+				04180889262C41E4005C973B /* TabBarViewController.swift */,
 				EECC16AC2629448900551E65 /* DeveloperViewController.swift */,
 				EE3D4B16262A0BF50019F781 /* DetailViewController.swift */,
 			);
@@ -208,6 +211,7 @@
 			files = (
 				EE3D4B17262A0BF50019F781 /* DetailViewController.swift in Sources */,
 				EE4978E72628F8CB00F78939 /* LoginViewController.swift in Sources */,
+				0418088A262C41E4005C973B /* TabBarViewController.swift in Sources */,
 				EE57611226296FF8007AE97A /* PlanetsListTableViewController.swift in Sources */,
 				3937357B262969500076BAAE /* Planet.swift in Sources */,
 				EEFFF558262B049C0004C2C9 /* DeveloperManager.swift in Sources */,

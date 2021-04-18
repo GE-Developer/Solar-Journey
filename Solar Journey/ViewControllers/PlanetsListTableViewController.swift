@@ -38,7 +38,6 @@ class PlanetsListTableViewController: UITableViewController {
             content.text = planet.planetEng
         }
         
-        
         content.image = UIImage(named: planet.planetEng)
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
         content.textProperties.color = .white
@@ -49,9 +48,6 @@ class PlanetsListTableViewController: UITableViewController {
         return cell
     }
     
-    
-
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
             let detailVC = segue.destination as! DetailViewController
@@ -59,10 +55,6 @@ class PlanetsListTableViewController: UITableViewController {
             detailVC.rusLanguage = rusLanguage
             detailVC.weightTF = weightTF
         }
-    }
-    
-    private func updateUI() {
-        navigationItem.title = rusLanguage ? "Планеты" : "Planets"
     }
     
 }
