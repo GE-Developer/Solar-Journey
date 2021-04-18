@@ -366,6 +366,7 @@
                                 </state>
                                 <connections>
                                     <action selector="englishButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="mHN-Xp-Oxj"/>
+                                    <action selector="myWeightButtonPressed" destination="7Uf-qq-Akc" eventType="touchUpInside" id="trn-E9-GUT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8e-Fg-awp">
