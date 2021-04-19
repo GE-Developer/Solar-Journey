@@ -47,18 +47,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
         let allowedCharacters = CharacterSet.decimalDigits
         let characterSet = CharacterSet(charactersIn: string)
         textFieldMaxLength(textField: textField, maxLength: 2)
+        
         return allowedCharacters.isSuperset(of: characterSet)
     }
     
     
     
     // MARK: - Private Methods
-    
     private func textFieldMaxLength(textField: UITextField!, maxLength: Int) {
-        if (textField.text!.count > maxLength) {
+        if textField.text!.count > maxLength {
             textField.deleteBackward()
         }
     }

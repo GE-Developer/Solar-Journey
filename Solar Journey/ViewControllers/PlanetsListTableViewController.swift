@@ -42,9 +42,11 @@ class PlanetsListTableViewController: UITableViewController {
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
         content.textProperties.color = .white
         cell.contentConfiguration = content
+        
         let selectedView = UIView()
         selectedView.backgroundColor = #colorLiteral(red: 0.2859136408, green: 0.2859136408, blue: 0.2859136408, alpha: 1)
         cell.selectedBackgroundView = selectedView
+        
         return cell
     }
     

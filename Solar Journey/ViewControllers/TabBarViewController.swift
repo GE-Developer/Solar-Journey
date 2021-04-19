@@ -21,10 +21,8 @@ class TabBarViewController: UITabBarController {
             navigationItem.title = "Разработчики"
         case "Планеты":
             navigationItem.title = "Планеты"
-        case "Planets":
-            navigationItem.title = "Planets"
         default:
-            break
+            navigationItem.title = "Planets"
         }
         
     }
